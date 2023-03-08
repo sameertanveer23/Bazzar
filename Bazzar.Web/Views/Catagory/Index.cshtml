@@ -1,0 +1,12 @@
+﻿@model List<Bazzar.Entities.Catagory>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<ul>
+    @foreach(var cat in Model)
+    {
+        <li>@cat.Name</li>
+    }
+</ul>

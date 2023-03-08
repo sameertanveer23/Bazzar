@@ -13,6 +13,11 @@ namespace Bazzar.Web.Controllers
         CatagoriesService catagoriesService = new CatagoriesService();
 
         // GET: Catagory
+        public ActionResult Index()
+        {
+            var categories = catagoriesService.ViewCatagory();
+            return View(categories);
+        }
         public ActionResult Create()
         {
             return View();
