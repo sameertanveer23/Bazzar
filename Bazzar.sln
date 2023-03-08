@@ -5,6 +5,10 @@ VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazzar.Web", "Bazzar.Web\Bazzar.Web.csproj", "{683C5E2C-154B-4EE1-BAEE-D3C5E5CA90B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazzar.Entities", "Bazzar.Entities\Bazzar.Entities.csproj", "{43819EFF-1FDA-42A9-9E91-8869A8D8E320}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazzar.Database", "Bazzar.Database\Bazzar.Database.csproj", "{EF337646-646C-45B2-A16F-9772F9F2CAB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{683C5E2C-154B-4EE1-BAEE-D3C5E5CA90B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{683C5E2C-154B-4EE1-BAEE-D3C5E5CA90B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{683C5E2C-154B-4EE1-BAEE-D3C5E5CA90B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43819EFF-1FDA-42A9-9E91-8869A8D8E320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43819EFF-1FDA-42A9-9E91-8869A8D8E320}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43819EFF-1FDA-42A9-9E91-8869A8D8E320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43819EFF-1FDA-42A9-9E91-8869A8D8E320}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF337646-646C-45B2-A16F-9772F9F2CAB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF337646-646C-45B2-A16F-9772F9F2CAB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF337646-646C-45B2-A16F-9772F9F2CAB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF337646-646C-45B2-A16F-9772F9F2CAB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

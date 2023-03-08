@@ -1,0 +1,6 @@
+C:\Users\sameer.tanveer\Documents\Bazzar\Bazzar.Entities\bin\Debug\Bazzar.Entities.dll
+C:\Users\sameer.tanveer\Documents\Bazzar\Bazzar.Entities\bin\Debug\Bazzar.Entities.pdb
+C:\Users\sameer.tanveer\Documents\Bazzar\Bazzar.Entities\obj\Debug\Bazzar.Entities.csproj.AssemblyReference.cache
+C:\Users\sameer.tanveer\Documents\Bazzar\Bazzar.Entities\obj\Debug\Bazzar.Entities.csproj.CoreCompileInputs.cache
+C:\Users\sameer.tanveer\Documents\Bazzar\Bazzar.Entities\obj\Debug\Bazzar.Entities.dll
+C:\Users\sameer.tanveer\Documents\Bazzar\Bazzar.Entities\obj\Debug\Bazzar.Entities.pdb
