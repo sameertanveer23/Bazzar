@@ -106,3 +106,11 @@ C:\Users\sameer.tanveer\Documents\Bazzar\Bazzar.Web\obj\Debug\Bazzar.Web.csproj.
 C:\Users\sameer.tanveer\Documents\Bazzar\Bazzar.Web\obj\Debug\Bazzar.Web.csproj.CopyComplete
 C:\Users\sameer.tanveer\Documents\Bazzar\Bazzar.Web\obj\Debug\Bazzar.Web.dll
 C:\Users\sameer.tanveer\Documents\Bazzar\Bazzar.Web\obj\Debug\Bazzar.Web.pdb
+C:\Users\sameer.tanveer\Documents\Bazzar\Bazzar.Web\bin\Bazzar.Entities.dll
+C:\Users\sameer.tanveer\Documents\Bazzar\Bazzar.Web\bin\Bazzar.Entities.pdb
+C:\Users\sameer.tanveer\Documents\Bazzar\Bazzar.Web\bin\Bazzar.Services.dll
+C:\Users\sameer.tanveer\Documents\Bazzar\Bazzar.Web\bin\Bazzar.Database.dll
+C:\Users\sameer.tanveer\Documents\Bazzar\Bazzar.Web\bin\Bazzar.Services.pdb
+C:\Users\sameer.tanveer\Documents\Bazzar\Bazzar.Web\bin\Bazzar.Services.dll.config
+C:\Users\sameer.tanveer\Documents\Bazzar\Bazzar.Web\bin\Bazzar.Database.pdb
+C:\Users\sameer.tanveer\Documents\Bazzar\Bazzar.Web\bin\Bazzar.Database.dll.config
