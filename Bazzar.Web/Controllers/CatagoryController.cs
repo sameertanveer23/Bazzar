@@ -12,7 +12,6 @@ namespace Bazzar.Web.Controllers
     {
         CatagoriesService catagoriesService = new CatagoriesService();
 
-        // GET: Catagory
         public ActionResult Index()
         {
             var categories = catagoriesService.ViewCatagory();
@@ -27,6 +26,17 @@ namespace Bazzar.Web.Controllers
         {
             catagoriesService.SaveCatagory(catagory);
             return View();
+        }
+        public ActionResult Edit(int Id)
+        {
+            var category =  catagoriesService.GetCatagoryById(Id);
+            return View(category);
+        }
+        [HttpPost]
+        public ActionResult Edit(Catagory catagory)
+        {
+            catagoriesService.UpdateCatagory(catagory);
+            return View(catagory);
         }
     }
 }

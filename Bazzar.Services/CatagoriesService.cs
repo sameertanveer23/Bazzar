@@ -15,6 +15,22 @@ namespace Bazzar.Services
                 
             }
         }
+        public Catagory GetCatagoryById(int Id)
+        {
+            using (var context = new BazzarContext())
+            {
+                return context.Catagories.Find(Id);
+
+            }
+        }
+        public void UpdateCatagory(Catagory catagory)
+        {
+            using (var context = new BazzarContext())
+            {
+                context.Entry(catagory).State = System.Data.Entity.EntityState.Modified;
+                context.SaveChanges();
+            }
+        }
         public void SaveCatagory(Catagory catagory)
         {
             using (var context = new BazzarContext())
