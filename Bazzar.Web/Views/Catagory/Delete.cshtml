@@ -1,0 +1,15 @@
+﻿@model Bazzar.Entities.Catagory
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+<form method="post">
+    <h2>Delete Catagory</h2>
+    <label></label>
+    <input name="Name" value=@Model.Id disabled /><br />
+    <h1>Are you sure you want to delete this ?</h1>
+    <button type="submit" class=" btn btn-danger">Delete</button>
+</form>
+
+<a href="/Index" class=" btn btn-danger">Cancel</a>

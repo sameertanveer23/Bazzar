@@ -38,5 +38,10 @@ namespace Bazzar.Web.Controllers
             catagoriesService.UpdateCatagory(catagory);
             return View(catagory);
         }
+        public ActionResult Delete(Catagory category)
+        {
+            catagoriesService.DeleteCatagory(category.Id);
+            return RedirectToAction("Index");
+        }
     }
 }

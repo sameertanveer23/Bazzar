@@ -39,5 +39,14 @@ namespace Bazzar.Services
                 context.SaveChanges();
             }
         }
+        public void DeleteCatagory(int id)
+        {
+            using (var context = new BazzarContext())
+            {
+                var catagory = context.Catagories.Find(id);
+                context.Catagories.Remove(catagory);
+                context.SaveChanges();
+            }
+        }
     }
 }
