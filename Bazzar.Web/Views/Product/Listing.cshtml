@@ -1,0 +1,36 @@
+﻿@model List<Product> 
+@{
+    ViewBag.Title = "Listing";
+}
+
+<h2>Products Listing </h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            @*<th scope="col">Description</th>*@
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <th>@product.Id</th>
+                <td>@product.Name</td>
+                <td>@product.Price</td>
+                <td>
+                    <button type="button" class="btn btn-warning">View</button>
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </td>
+
+            </tr>
+        }
+
+
+    </tbody>
+</table>
