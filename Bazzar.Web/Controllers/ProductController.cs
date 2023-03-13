@@ -15,10 +15,15 @@ namespace Bazzar.Web.Controllers
         {
             return View();
         }
-        public ActionResult Listing()
+        public ActionResult Listing(string search)
+        
         {
-            var products = productService.ViewProduct().ToList();
-            return View(products);
+            var products = productService.ViewProduct();
+            if(!string.IsNullOrEmpty(search))
+            {
+                products = products.Where(p => p.Name != null && p.Name.Contains(search)).ToList();
+            }
+            return PartialView(products);
         }
         public ActionResult Create()
         {
