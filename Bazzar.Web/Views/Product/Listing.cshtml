@@ -2,12 +2,13 @@
 @{
     ViewBag.Title = "Listing";
 }
-<form method="post" >
-    <input id="searchTxt" name="search"/>
-    <button id="searchBtn" type="button">Search</button>
-</form>
 
-<div >
+
+<div class="container">
+    <form method="post">
+        <input id="searchTxt" name="search" />
+        <button id="searchBtn" type="button">Search</button>
+    </form>
     <table class="table">
         <thead>
             <tr>
@@ -17,7 +18,7 @@
                 @*<th scope="col">Description</th>*@
                 <th scope="col">Action</th>
                 <th scope="col">
-                    @Html.ActionLink("Add new Product", "Create", "Product", new { @class = "btn btn-primary"})
+                    @Html.ActionLink("Add new Product", "Create", "Product", new { @class = "btn btn-primary" })
                 </th>
 
             </tr>
