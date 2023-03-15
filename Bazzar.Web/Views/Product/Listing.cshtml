@@ -27,7 +27,8 @@
                     <td>@product.Price</td>
                     <td>
                         <button type="button" class="btn btn-warning">View</button>
-                        <button type="button" class="btn btn-primary">Edit</button>
+                        <a href="@Url.Action("Edit", "Product", new { id = product.Id })" class = "btn btn-primary">Edit</a>
+
                         <button type="button" class="btn btn-danger">Delete</button>
                     </td>
 

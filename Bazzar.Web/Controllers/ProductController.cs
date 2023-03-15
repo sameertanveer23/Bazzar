@@ -36,5 +36,16 @@ namespace Bazzar.Web.Controllers
             productService.SaveProduct(product);
             return RedirectToAction("Listing");
         }
+        public ActionResult Edit(int id)
+        {
+            var product =  productService.GetProductById(id);
+            return View(product);
+        }
+        [HttpPost]
+        public ActionResult Edit(Product product)
+        {
+            productService.UpdateProduct(product);
+            return RedirectToAction("Index");
+        }
     }
 }
