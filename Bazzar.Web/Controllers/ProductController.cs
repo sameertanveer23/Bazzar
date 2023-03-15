@@ -34,7 +34,7 @@ namespace Bazzar.Web.Controllers
         {
 
             productService.SaveProduct(product);
-            return RedirectToAction("Listing");
+            return RedirectToAction("Index");
         }
         public ActionResult Edit(int id)
         {
@@ -46,6 +46,17 @@ namespace Bazzar.Web.Controllers
         {
             productService.UpdateProduct(product);
             return RedirectToAction("Index");
+        }
+        public ActionResult View(int id)
+        {
+            var product = productService.GetProductById(id);
+            return View(product);
+        }
+        public ActionResult Delete(int id)
+        {
+            productService.DeleteProduct(id);
+            return RedirectToAction("Index");
+
         }
     }
 }

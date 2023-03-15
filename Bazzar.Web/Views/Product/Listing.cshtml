@@ -16,6 +16,10 @@
                 <th scope="col">Price</th>
                 @*<th scope="col">Description</th>*@
                 <th scope="col">Action</th>
+                <th scope="col">
+                    @Html.ActionLink("Add new Product", "Create", "Product", new { @class = "btn btn-primary"})
+                </th>
+
             </tr>
         </thead>
         <tbody>
@@ -26,10 +30,12 @@
                     <td>@product.Name</td>
                     <td>@product.Price</td>
                     <td>
-                        <button type="button" class="btn btn-warning">View</button>
-                        <a href="@Url.Action("Edit", "Product", new { id = product.Id })" class = "btn btn-primary">Edit</a>
+                        <a href="@Url.Action("View", "Product", new { id = product.Id })" class="btn btn-primary">View</a>
 
-                        <button type="button" class="btn btn-danger">Delete</button>
+                        <a href="@Url.Action("Edit", "Product", new { id = product.Id })" class="btn btn-warning">Edit</a>
+
+                        <a href="@Url.Action("Delete", "Product", new { id = product.Id })" class="btn btn-danger delete-btn" onclick="confirmDelete()">Delete</a>
+
                     </td>
 
                 </tr>
@@ -56,5 +62,11 @@
 
     })
 
+    const confirmDelete = () => {
+        if (!confirm("Are you sure you want to delete it?")) {
+            event.preventDefault();
+        }
+        else true;
+    }
 
 </script>
